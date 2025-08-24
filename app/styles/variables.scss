@@ -1,0 +1,255 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --auxilab-elements-borderColor: theme('colors.alpha.gray.10');
+  --auxilab-elements-borderColorActive: theme('colors.accent.600');
+
+  --auxilab-elements-bg-depth-1: theme('colors.white');
+  --auxilab-elements-bg-depth-2: theme('colors.gray.50');
+  --auxilab-elements-bg-depth-3: theme('colors.gray.200');
+  --auxilab-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --auxilab-elements-textPrimary: theme('colors.gray.950');
+  --auxilab-elements-textSecondary: theme('colors.gray.600');
+  --auxilab-elements-textTertiary: theme('colors.gray.500');
+
+  --auxilab-elements-code-background: theme('colors.gray.100');
+  --auxilab-elements-code-text: theme('colors.gray.950');
+
+  --auxilab-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --auxilab-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --auxilab-elements-button-primary-text: theme('colors.accent.500');
+
+  --auxilab-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --auxilab-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --auxilab-elements-button-secondary-text: theme('colors.gray.950');
+
+  --auxilab-elements-button-danger-background: theme('colors.alpha.red.10');
+  --auxilab-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --auxilab-elements-button-danger-text: theme('colors.red.500');
+
+  --auxilab-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --auxilab-elements-item-contentActive: theme('colors.gray.950');
+  --auxilab-elements-item-contentAccent: theme('colors.accent.700');
+  --auxilab-elements-item-contentDanger: theme('colors.red.500');
+  --auxilab-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --auxilab-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --auxilab-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --auxilab-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --auxilab-elements-loader-background: theme('colors.alpha.gray.10');
+  --auxilab-elements-loader-progress: theme('colors.accent.500');
+
+  --auxilab-elements-artifacts-background: theme('colors.white');
+  --auxilab-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --auxilab-elements-artifacts-borderColor: var(--auxilab-elements-borderColor);
+  --auxilab-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --auxilab-elements-artifacts-inlineCode-text: var(--auxilab-elements-textPrimary);
+
+  --auxilab-elements-actions-background: theme('colors.white');
+  --auxilab-elements-actions-code-background: theme('colors.gray.800');
+
+  --auxilab-elements-messages-background: theme('colors.gray.100');
+  --auxilab-elements-messages-linkColor: theme('colors.accent.500');
+  --auxilab-elements-messages-code-background: theme('colors.gray.800');
+  --auxilab-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --auxilab-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --auxilab-elements-icon-success: theme('colors.green.500');
+  --auxilab-elements-icon-error: theme('colors.red.500');
+  --auxilab-elements-icon-primary: theme('colors.gray.950');
+  --auxilab-elements-icon-secondary: theme('colors.gray.600');
+  --auxilab-elements-icon-tertiary: theme('colors.gray.500');
+
+  --auxilab-elements-dividerColor: theme('colors.gray.100');
+
+  --auxilab-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --auxilab-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --auxilab-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --auxilab-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --auxilab-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --auxilab-elements-preview-addressBar-background: theme('colors.gray.100');
+  --auxilab-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --auxilab-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --auxilab-elements-preview-addressBar-text: var(--auxilab-elements-textSecondary);
+  --auxilab-elements-preview-addressBar-textActive: var(--auxilab-elements-textPrimary);
+
+  --auxilab-elements-terminals-background: theme('colors.white');
+  --auxilab-elements-terminals-buttonBackground: var(--auxilab-elements-bg-depth-4);
+
+  --auxilab-elements-cta-background: theme('colors.gray.100');
+  --auxilab-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --auxilab-terminal-background: var(--auxilab-elements-terminals-background);
+  --auxilab-terminal-foreground: #333333;
+  --auxilab-terminal-selection-background: #00000040;
+  --auxilab-terminal-black: #000000;
+  --auxilab-terminal-red: #cd3131;
+  --auxilab-terminal-green: #00bc00;
+  --auxilab-terminal-yellow: #949800;
+  --auxilab-terminal-blue: #0451a5;
+  --auxilab-terminal-magenta: #bc05bc;
+  --auxilab-terminal-cyan: #0598bc;
+  --auxilab-terminal-white: #555555;
+  --auxilab-terminal-brightBlack: #686868;
+  --auxilab-terminal-brightRed: #cd3131;
+  --auxilab-terminal-brightGreen: #00bc00;
+  --auxilab-terminal-brightYellow: #949800;
+  --auxilab-terminal-brightBlue: #0451a5;
+  --auxilab-terminal-brightMagenta: #bc05bc;
+  --auxilab-terminal-brightCyan: #0598bc;
+  --auxilab-terminal-brightWhite: #a5a5a5;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example light theme color
+  --modern-scrollbar-thumb-backgroundHover: rgba(74, 74, 74, 0.8);
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --auxilab-elements-borderColor: theme('colors.alpha.white.10');
+  --auxilab-elements-borderColorActive: theme('colors.accent.500');
+
+  --auxilab-elements-bg-depth-1: theme('colors.gray.950');
+  --auxilab-elements-bg-depth-2: theme('colors.gray.900');
+  --auxilab-elements-bg-depth-3: theme('colors.gray.800');
+  --auxilab-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --auxilab-elements-textPrimary: theme('colors.white');
+  --auxilab-elements-textSecondary: theme('colors.gray.400');
+  --auxilab-elements-textTertiary: theme('colors.gray.500');
+
+  --auxilab-elements-code-background: theme('colors.gray.800');
+  --auxilab-elements-code-text: theme('colors.white');
+
+  --auxilab-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --auxilab-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --auxilab-elements-button-primary-text: theme('colors.accent.500');
+
+  --auxilab-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --auxilab-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --auxilab-elements-button-secondary-text: theme('colors.white');
+
+  --auxilab-elements-button-danger-background: theme('colors.alpha.red.10');
+  --auxilab-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --auxilab-elements-button-danger-text: theme('colors.red.500');
+
+  --auxilab-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --auxilab-elements-item-contentActive: theme('colors.white');
+  --auxilab-elements-item-contentAccent: theme('colors.accent.500');
+  --auxilab-elements-item-contentDanger: theme('colors.red.500');
+  --auxilab-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --auxilab-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --auxilab-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --auxilab-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --auxilab-elements-loader-background: theme('colors.alpha.gray.10');
+  --auxilab-elements-loader-progress: theme('colors.accent.500');
+
+  --auxilab-elements-artifacts-background: theme('colors.gray.900');
+  --auxilab-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --auxilab-elements-artifacts-borderColor: var(--auxilab-elements-borderColor);
+  --auxilab-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --auxilab-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --auxilab-elements-actions-background: theme('colors.gray.900');
+  --auxilab-elements-actions-code-background: theme('colors.gray.800');
+
+  --auxilab-elements-messages-background: theme('colors.gray.800');
+  --auxilab-elements-messages-linkColor: theme('colors.accent.500');
+  --auxilab-elements-messages-code-background: theme('colors.gray.900');
+  --auxilab-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --auxilab-elements-messages-inlineCode-text: var(--auxilab-elements-textPrimary);
+
+  --auxilab-elements-icon-success: theme('colors.green.400');
+  --auxilab-elements-icon-error: theme('colors.red.400');
+  --auxilab-elements-icon-primary: theme('colors.gray.950');
+  --auxilab-elements-icon-secondary: theme('colors.gray.600');
+  --auxilab-elements-icon-tertiary: theme('colors.gray.500');
+
+  --auxilab-elements-dividerColor: theme('colors.gray.100');
+
+  --auxilab-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --auxilab-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --auxilab-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --auxilab-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --auxilab-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --auxilab-elements-preview-addressBar-background: var(--auxilab-elements-bg-depth-1);
+  --auxilab-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --auxilab-elements-preview-addressBar-backgroundActive: var(--auxilab-elements-bg-depth-1);
+  --auxilab-elements-preview-addressBar-text: var(--auxilab-elements-textSecondary);
+  --auxilab-elements-preview-addressBar-textActive: var(--auxilab-elements-textPrimary);
+
+  --auxilab-elements-terminals-background: var(--auxilab-elements-bg-depth-1);
+  --auxilab-elements-terminals-buttonBackground: var(--auxilab-elements-bg-depth-3);
+
+  --auxilab-elements-cta-background: theme('colors.alpha.white.10');
+  --auxilab-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --auxilab-terminal-background: var(--auxilab-elements-terminals-background);
+  --auxilab-terminal-foreground: #eff0eb;
+  --auxilab-terminal-selection-background: #97979b33;
+  --auxilab-terminal-black: #000000;
+  --auxilab-terminal-red: #ff5c57;
+  --auxilab-terminal-green: #5af78e;
+  --auxilab-terminal-yellow: #f3f99d;
+  --auxilab-terminal-blue: #57c7ff;
+  --auxilab-terminal-magenta: #ff6ac1;
+  --auxilab-terminal-cyan: #9aedfe;
+  --auxilab-terminal-white: #f1f1f0;
+  --auxilab-terminal-brightBlack: #686868;
+  --auxilab-terminal-brightRed: #ff5c57;
+  --auxilab-terminal-brightGreen: #5af78e;
+  --auxilab-terminal-brightYellow: #f3f99d;
+  --auxilab-terminal-brightBlue: #57c7ff;
+  --auxilab-terminal-brightMagenta: #ff6ac1;
+  --auxilab-terminal-brightCyan: #9aedfe;
+  --auxilab-terminal-brightWhite: #f1f1f0;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example dark theme color (adjust as needed)
+  --modern-scrollbar-thumb-backgroundHover: rgba(10, 10, 10, 0.8);
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 33rem;
+  --chat-min-width: 533px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 2536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--auxilab-elements-icon-success);
+  --toastify-color-progress-error: var(--auxilab-elements-icon-error);
+
+  /* Terminal */
+  --auxilab-elements-terminal-backgroundColor: var(--auxilab-terminal-background);
+  --auxilab-elements-terminal-textColor: var(--auxilab-terminal-foreground);
+  --auxilab-elements-terminal-cursorColor: var(--auxilab-terminal-foreground);
+  --auxilab-elements-terminal-selection-backgroundColor: var(--auxilab-terminal-selection-background);
+  --auxilab-elements-terminal-color-black: var(--auxilab-terminal-black);
+  --auxilab-elements-terminal-color-red: var(--auxilab-terminal-red);
+  --auxilab-elements-terminal-color-green: var(--auxilab-terminal-green);
+  --auxilab-elements-terminal-color-yellow: var(--auxilab-terminal-yellow);
+  --auxilab-elements-terminal-color-blue: var(--auxilab-terminal-blue);
+  --auxilab-elements-terminal-color-magenta: var(--auxilab-terminal-magenta);
+  --auxilab-elements-terminal-color-cyan: var(--auxilab-terminal-cyan);
+  --auxilab-elements-terminal-color-white: var(--auxilab-terminal-white);
+  --auxilab-elements-terminal-color-brightBlack: var(--auxilab-terminal-brightBlack);
+  --auxilab-elements-terminal-color-brightRed: var(--auxilab-terminal-brightRed);
+  --auxilab-elements-terminal-color-brightGreen: var(--auxilab-terminal-brightGreen);
+  --auxilab-elements-terminal-color-brightYellow: var(--auxilab-terminal-brightYellow);
+  --auxilab-elements-terminal-color-brightBlue: var(--auxilab-terminal-brightBlue);
+  --auxilab-elements-terminal-color-brightMagenta: var(--auxilab-terminal-brightMagenta);
+  --auxilab-elements-terminal-color-brightCyan: var(--auxilab-terminal-brightCyan);
+  --auxilab-elements-terminal-color-brightWhite: var(--auxilab-terminal-brightWhite);
+}

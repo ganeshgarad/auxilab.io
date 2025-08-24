@@ -1,0 +1,9 @@
+.actions .shiki {
+  background-color: var(--auxilab-elements-actions-code-background) !important;
+}
+
+.shiki {
+  &:not(:has(.actions), .actions *, .mcp-tool-invocation-code *) {
+    background-color: var(--auxilab-elements-messages-code-background) !important;
+  }
+}

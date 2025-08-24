@@ -1,0 +1,135 @@
+:root {
+  --cm-backgroundColor: var(--auxilab-elements-editor-backgroundColor, var(--auxilab-elements-bg-depth-1));
+  --cm-textColor: var(--auxilab-elements-editor-textColor, var(--auxilab-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--auxilab-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--auxilab-elements-editor-gutter-textColor, var(--auxilab-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(--auxilab-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--auxilab-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--auxilab-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--auxilab-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--auxilab-elements-editor-cursorColor, var(--auxilab-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--auxilab-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--auxilab-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--auxilab-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--auxilab-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--auxilab-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--auxilab-elements-editor-panels-borderColor, var(--auxilab-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--auxilab-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--auxilab-elements-editor-search-textColor, var(--auxilab-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(--auxilab-elements-editor-search-closeButton-backgroundColor, transparent);
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --auxilab-elements-editor-search-closeButton-backgroundColorHover,
+    var(--auxilab-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --auxilab-elements-editor-search-closeButton-textColor,
+    var(--auxilab-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --auxilab-elements-editor-search-closeButton-textColorHover,
+    var(--auxilab-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --auxilab-elements-editor-search-button-backgroundColor,
+    var(--auxilab-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --auxilab-elements-editor-search-button-backgroundColorHover,
+    var(--auxilab-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(--auxilab-elements-editor-search-button-textColor, var(--auxilab-elements-textSecondary));
+
+  --cm-search-button-textColorHover: var(
+    --auxilab-elements-editor-search-button-textColorHover,
+    var(--auxilab-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--auxilab-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--auxilab-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --auxilab-elements-editor-search-button-borderColorFocused,
+    var(--auxilab-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--auxilab-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(--auxilab-elements-editor-search-input-textColor, var(--auxilab-elements-textPrimary));
+  --cm-search-input-borderColor: var(--auxilab-elements-editor-search-input-borderColor, var(--auxilab-elements-borderColor));
+
+  --cm-search-input-borderColorFocused: var(
+    --auxilab-elements-editor-search-input-borderColorFocused,
+    var(--auxilab-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--auxilab-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--auxilab-elements-editor-tooltip-textColor, var(--auxilab-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --auxilab-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --auxilab-elements-editor-tooltip-textColorSelected,
+    var(--auxilab-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--auxilab-elements-editor-tooltip-borderColor, var(--auxilab-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--auxilab-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --auxilab-elements-editor-gutter-textColor: #237893;
+  --auxilab-elements-editor-gutter-activeLineTextColor: var(--auxilab-elements-textPrimary);
+  --auxilab-elements-editor-foldGutter-textColorHover: var(--auxilab-elements-textPrimary);
+  --auxilab-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --auxilab-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --auxilab-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --auxilab-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--auxilab-elements-bg-depth-2);
+  --auxilab-elements-editor-gutter-textColor: var(--auxilab-elements-textTertiary);
+  --auxilab-elements-editor-gutter-activeLineTextColor: var(--auxilab-elements-textSecondary);
+  --auxilab-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --auxilab-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --auxilab-elements-editor-foldGutter-textColorHover: var(--auxilab-elements-textPrimary);
+  --auxilab-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --auxilab-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --auxilab-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}
